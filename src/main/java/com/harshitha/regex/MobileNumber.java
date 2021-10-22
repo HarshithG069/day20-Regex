@@ -3,10 +3,10 @@ package com.harshitha.regex;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class EmailId {
+public class MobileNumber {
     public static void main(String[] args) {
-        Pattern pattern = Pattern.compile("(?=.*[a-b])(?=.*[@])");
-        Matcher matcher = pattern.matcher("abc.xyz@bl.co.in");
+        Pattern pattern = Pattern.compile("^[91 ][6-9][0-9]{9}$");
+        Matcher matcher = pattern.matcher("91 8296702715");
         if (matcher.find())
             System.out.println("Pattern matched");
         else
