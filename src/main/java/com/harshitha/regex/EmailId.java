@@ -3,10 +3,10 @@ package com.harshitha.regex;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class LastName {
+public class EmailId {
     public static void main(String[] args) {
-        Pattern pattern = Pattern.compile("^[A-Z]{1}[a-z]{2,}");
-        Matcher matcher = pattern.matcher("Chigulla");
+        Pattern pattern = Pattern.compile("(?=.*[a-b])(?=.*[@])");
+        Matcher matcher = pattern.matcher("abc.xyz@bl.co.in");
         if (matcher.find())
             System.out.println("Pattern matched");
         else
